@@ -39,6 +39,10 @@
 ;; You may delete these explanatory comments.
                                         ;(package-initialize)
 
+
+(require 'package)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+
 (defvar prelude-user
   (getenv
    (if (equal system-type 'windows-nt) "USERNAME" "USER")))

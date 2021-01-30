@@ -1,0 +1,1 @@
+(require 'flycheck-clj-kondo)
