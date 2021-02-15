@@ -7,7 +7,7 @@
              :hook
              (after-init . org-roam-mode)
              :custom
-             (org-roam-directory "~/Documents/org/org-roam")
+             (org-roam-directory "~/Dropbox/roam")
              :bind (:map org-roam-mode-map
                          (("C-c n l" . org-roam)
                           ("C-c n f" . org-roam-find-file)

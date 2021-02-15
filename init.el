@@ -37,7 +37,9 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-                                        ;(package-initialize)
+
+
+(package-initialize)
 
 
 (require 'package)
@@ -122,9 +124,11 @@ by Prelude.")
 (when (eq system-type 'darwin)
   (require 'prelude-macos))
 
+
+
 ;; Linux specific settings
-(when (eq system-type 'gnu/linux)
-  (require 'prelude-linux))
+;(when (eq system-type 'gnu/linux)
+;  (require 'prelude-linux))
 
 ;; WSL specific setting
 (when (and (eq system-type 'gnu/linux) (getenv "WSLENV"))

@@ -5,7 +5,7 @@
   :demand t ;; without this, the package won't be loaded, so org-agenda won't be configured
   :custom
   ;; where org-gtd will put its files. This value is also the default one.
-  (org-gtd-directory "~/gtd/")
+  (org-gtd-directory "~/Dropbox/gtd")
   ;; package: https://github.com/Malabarba/org-agenda-property
   ;; this is so you can see who an item was delegated to in the agenda
   (org-agenda-property-list '("DELEGATED_TO"))
