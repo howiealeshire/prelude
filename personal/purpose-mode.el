@@ -1,6 +1,8 @@
 (require 'window-purpose)
 (purpose-mode)
 
+(require 'window-purpose-x)
+(purpose-x-kill-setup)
 
 (add-to-list 'purpose-user-mode-purposes '(cider-repl-mode . cider))
 (add-to-list 'purpose-user-mode-purposes '(clojure-mode . coding))

@@ -2,11 +2,6 @@
   "load window layout"
   (with-selected-frame frame
     (when (daemonp)
-      (when (string-match "fulcro" server-name)
-        (purpose-load-window-layout "fulcro-app"))
-      (when (string-match "org" server-name)
-        (purpose-load-window-layout "org-mode"))
-      )))
-
+      (purpose-load-window-layout server-name))))
 
  (add-to-list 'after-make-frame-functions #'my-start-emacs)
